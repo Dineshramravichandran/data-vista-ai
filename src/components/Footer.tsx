@@ -60,7 +60,14 @@ const Footer = () => {
                   placeholder="Enter email"
                   className="text-sm"
                 />
-                <Button size="sm" className="bg-primary hover:bg-primary-light text-primary-foreground">
+                <Button 
+                  size="sm" 
+                  className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white"
+                  onClick={() => {
+                    // Add newsletter signup logic here
+                    console.log("Newsletter signup");
+                  }}
+                >
                   <Mail className="w-4 h-4" />
                 </Button>
               </div>

@@ -121,10 +121,10 @@ const Contact = () => {
 
                 <Button 
                   type="submit" 
-                  className="w-full bg-primary hover:bg-primary-light text-primary-foreground hover-lift"
+                  className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white shadow-lg hover:shadow-glow-primary transition-all duration-300 group"
                   size="lg"
                 >
-                  <Send className="w-4 h-4 mr-2" />
+                  <Send className="w-4 h-4 mr-2 group-hover:translate-x-0.5 transition-transform" />
                   Send Message
                 </Button>
               </form>
@@ -169,7 +169,15 @@ const Contact = () => {
                     placeholder="Enter your email"
                     className="bg-white/10 border-white/20 text-white placeholder:text-white/60"
                   />
-                  <Button className="bg-white/20 hover:bg-white/30 text-white border-white/20">
+                  <Button 
+                    className="bg-white/20 hover:bg-white/30 text-white border-white/20 transition-all duration-300"
+                    onClick={() => {
+                      toast({
+                        title: "Subscribed!",
+                        description: "You'll receive updates about Smart API Gateway.",
+                      });
+                    }}
+                  >
                     Subscribe
                   </Button>
                 </div>
