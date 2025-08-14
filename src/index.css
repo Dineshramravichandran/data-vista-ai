@@ -16,19 +16,19 @@
     --surface: 220 20% 98%;
     --surface-foreground: 225 15% 15%;
 
-    /* Government Primary - Deep Blue */
-    --primary: 220 85% 25%;
-    --primary-light: 220 75% 35%;
+    /* Primary - Dark Purple */
+    --primary: 270 95% 25%;
+    --primary-light: 270 85% 35%;
     --primary-foreground: 0 0% 98%;
 
-    /* Technology Secondary - Purple */
-    --secondary: 260 70% 45%;
-    --secondary-light: 260 60% 55%;
+    /* Secondary - Deep Indigo */
+    --secondary: 240 90% 30%;
+    --secondary-light: 240 80% 40%;
     --secondary-foreground: 0 0% 98%;
 
-    /* Data Accent - Cyan */
-    --accent: 190 85% 45%;
-    --accent-light: 190 75% 55%;
+    /* Accent - Electric Purple */
+    --accent: 285 100% 50%;
+    --accent-light: 285 90% 60%;
     --accent-foreground: 0 0% 98%;
 
     /* Success - Green */
@@ -106,19 +106,19 @@
     --surface: 225 15% 10%;
     --surface-foreground: 0 0% 95%;
 
-    /* Government Primary - Bright Blue */
-    --primary: 220 85% 55%;
-    --primary-light: 220 75% 65%;
+    /* Primary - Bright Purple */
+    --primary: 270 95% 65%;
+    --primary-light: 270 85% 75%;
     --primary-foreground: 225 25% 8%;
 
-    /* Technology Secondary - Bright Purple */
-    --secondary: 260 70% 65%;
-    --secondary-light: 260 60% 75%;
+    /* Secondary - Bright Indigo */
+    --secondary: 240 90% 70%;
+    --secondary-light: 240 80% 80%;
     --secondary-foreground: 225 25% 8%;
 
-    /* Data Accent - Bright Cyan */
-    --accent: 190 85% 65%;
-    --accent-light: 190 75% 75%;
+    /* Accent - Electric Purple */
+    --accent: 285 100% 70%;
+    --accent-light: 285 90% 80%;
     --accent-foreground: 225 25% 8%;
 
     /* Success - Bright Green */

@@ -58,14 +58,22 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Button 
               size="lg" 
-              className="hero-btn-primary px-8 py-4 text-lg font-semibold bg-accent hover:bg-accent-light text-accent-foreground hover-lift"
+              className="px-8 py-4 text-lg font-semibold bg-accent hover:bg-accent/90 text-accent-foreground hover-lift"
+              onClick={() => {
+                const element = document.querySelector('#contact');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               Get Started
             </Button>
             <Button 
               variant="outline" 
               size="lg" 
-              className="hero-btn-secondary px-8 py-4 text-lg font-semibold border-white/30 text-white hover:bg-white/10 hover-lift"
+              className="px-8 py-4 text-lg font-semibold border-white/30 text-white hover:bg-white/10 hover-lift"
+              onClick={() => {
+                const element = document.querySelector('#developer-tools');
+                if (element) element.scrollIntoView({ behavior: 'smooth' });
+              }}
             >
               View Demo
             </Button>

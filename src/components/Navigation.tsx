@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import { Menu, X, Database } from "lucide-react";
 
 const Navigation = () => {
@@ -66,13 +67,18 @@ const Navigation = () => {
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-4">
+            <ThemeToggle />
             <Button 
               variant="outline"
               className="border-primary/20 text-foreground hover:bg-primary/10"
+              onClick={() => window.open('#', '_blank')}
             >
               Login
             </Button>
-            <Button className="bg-primary hover:bg-primary-light text-primary-foreground">
+            <Button 
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              onClick={() => scrollToSection('#contact')}
+            >
               Get Started
             </Button>
           </div>
@@ -104,13 +110,20 @@ const Navigation = () => {
                 </button>
               ))}
               <div className="pt-4 border-t space-y-3">
+                <div className="flex justify-center mb-3">
+                  <ThemeToggle />
+                </div>
                 <Button 
                   variant="outline" 
                   className="w-full border-primary/20 text-foreground hover:bg-primary/10"
+                  onClick={() => window.open('#', '_blank')}
                 >
                   Login
                 </Button>
-                <Button className="w-full bg-primary hover:bg-primary-light text-primary-foreground">
+                <Button 
+                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                  onClick={() => scrollToSection('#contact')}
+                >
                   Get Started
                 </Button>
               </div>
